@@ -1,0 +1,179 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "ad_astra"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "thermal"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "ad_astra:steel_plate"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "ad_astra:steel_rod"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "thermal:flux_magnet"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "thermal:invar_plate"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "#IF",
+          "/#I",
+          "iSS"
+        ],
+        "key": {
+          "#": {
+            "item": "minecraft:iron_block"
+          },
+          "I": {
+            "item": "minecraft:iron_bars"
+          },
+          "F": {
+            "item": "thermal:flux_magnet"
+          },
+          "/": {
+            "item": "ad_astra:steel_rod"
+          },
+          "i": {
+            "item": "thermal:invar_plate"
+          },
+          "S": {
+            "item": "ad_astra:steel_plate"
+          }
+        },
+        "result": {
+          "item": "long_fall_boots:boot_frame",
+          "count": 1
+        }
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "ad_astra"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "ad_astra:steel_plate"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "ad_astra:steel_rod"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "#I ",
+          "/#I",
+          " SS"
+        ],
+        "key": {
+          "#": {
+            "item": "minecraft:iron_block"
+          },
+          "I": {
+            "item": "minecraft:iron_bars"
+          },
+          "/": {
+            "item": "ad_astra:steel_rod"
+          },
+          "S": {
+            "item": "ad_astra:steel_plate"
+          }
+        },
+        "result": {
+          "item": "long_fall_boots:boot_frame",
+          "count": 1
+        }
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "thermal"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "thermal:flux_magnet"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "thermal:invar_plate"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "#I ",
+          "F#I",
+          " ii"
+        ],
+        "key": {
+          "#": {
+            "item": "minecraft:iron_block"
+          },
+          "I": {
+            "item": "minecraft:iron_bars"
+          },
+          "F": {
+            "item": "thermal:flux_magnet"
+          },
+          "i": {
+            "item": "thermal:invar_plate"
+          }
+        },
+        "result": {
+          "item": "long_fall_boots:boot_frame",
+          "count": 1
+        }
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "forge:true"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "Ii ",
+          "#Ii",
+          " ##"
+        ],
+        "key": {
+          "I": {
+            "item": "minecraft:iron_block"
+          },
+          "i": {
+            "item": "minecraft:iron_bars"
+          },
+          "#": {
+            "item": "minecraft:obsidian"
+          }
+        },
+        "result": {
+          "item": "long_fall_boots:boot_frame",
+          "count": 1
+        }
+      }
+    }
+  ]
+}

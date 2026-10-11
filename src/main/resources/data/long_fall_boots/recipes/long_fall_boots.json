@@ -1,0 +1,149 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "thermal"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "thermal:flux_capacitor"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "thermal:flux_magnet"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "thermal:rf_coil_storage_augment"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "thermal:rf_coil_xfer_augment"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "#F#",
+          "GRG",
+          "BfB"
+        ],
+        "key": {
+          "#": {
+            "item": "thermal:rf_coil_storage_augment"
+          },
+          "F": {
+            "item": "thermal:flux_magnet"
+          },
+          "G": {
+            "item": "long_fall_boots:gyroscope"
+          },
+          "R": {
+            "item": "thermal:rf_coil_xfer_augment"
+          },
+          "B": {
+            "item": "long_fall_boots:boot_frame"
+          },
+          "f": {
+            "item": "thermal:flux_capacitor"
+          }
+        },
+        "result": {
+          "item": "long_fall_boots:long_fall_boots",
+          "count": 1
+        }
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "ad_astra"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "ad_astra:steel_block"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "ad_astra:steel_plate"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "ad_astra:steel_rod"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "###",
+          "G/G",
+          "BSB"
+        ],
+        "key": {
+          "#": {
+            "item": "ad_astra:steel_block"
+          },
+          "G": {
+            "item": "long_fall_boots:gyroscope"
+          },
+          "/": {
+            "item": "ad_astra:steel_rod"
+          },
+          "B": {
+            "item": "long_fall_boots:boot_frame"
+          },
+          "S": {
+            "item": "ad_astra:steel_plate"
+          }
+        },
+        "result": {
+          "item": "long_fall_boots:long_fall_boots",
+          "count": 1
+        }
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "forge:true"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "#C#",
+          "GIG",
+          "B.B"
+        ],
+        "key": {
+          "#": {
+            "item": "minecraft:iron_block"
+          },
+          "C": {
+            "item": "minecraft:compass"
+          },
+          "G": {
+            "item": "long_fall_boots:gyroscope"
+          },
+          "I": {
+            "item": "minecraft:iron_bars"
+          },
+          "B": {
+            "item": "long_fall_boots:boot_frame"
+          },
+          ".": {
+            "item": "minecraft:redstone_block"
+          }
+        },
+        "result": {
+          "item": "long_fall_boots:long_fall_boots",
+          "count": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "create"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "thermal"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "create:golden_sheet"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "thermal:redstone_servo"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          ".#.",
+          "#R#",
+          ".#."
+        ],
+        "key": {
+          ".": {
+            "item": "minecraft:redstone"
+          },
+          "#": {
+            "item": "create:golden_sheet"
+          },
+          "R": {
+            "item": "thermal:redstone_servo"
+          }
+        },
+        "result": {
+          "item": "long_fall_boots:gyroscope",
+          "count": 1
+        }
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "create"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "create:golden_sheet"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          ".#.",
+          "#C#",
+          ".#."
+        ],
+        "key": {
+          ".": {
+            "item": "minecraft:redstone"
+          },
+          "#": {
+            "item": "create:golden_sheet"
+          },
+          "C": {
+            "item": "minecraft:compass"
+          }
+        },
+        "result": {
+          "item": "long_fall_boots:gyroscope",
+          "count": 1
+        }
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "thermal"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "thermal:redstone_servo"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          ".#.",
+          "#R#",
+          ".#."
+        ],
+        "key": {
+          ".": {
+            "item": "minecraft:redstone"
+          },
+          "#": {
+            "item": "minecraft:gold_ingot"
+          },
+          "R": {
+            "item": "thermal:redstone_servo"
+          }
+        },
+        "result": {
+          "item": "long_fall_boots:gyroscope",
+          "count": 1
+        }
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "forge:true"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          ".#.",
+          "#C#",
+          ".#."
+        ],
+        "key": {
+          ".": {
+            "item": "minecraft:redstone"
+          },
+          "#": {
+            "item": "minecraft:gold_ingot"
+          },
+          "C": {
+            "item": "minecraft:compass"
+          }
+        },
+        "result": {
+          "item": "long_fall_boots:gyroscope",
+          "count": 1
+        }
+      }
+    }
+  ]
+}

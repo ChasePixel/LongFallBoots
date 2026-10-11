@@ -1,0 +1,42 @@
+{
+  "parent": "builtin/entity",
+  "textures": {
+    "particle": "fallboots:entity/long_fall_boots"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [0.72, 13.8, -5.86],
+      "translation": [0, 3, 0],
+      "scale": [0.55, 0.55, 0.55]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [0.72, 13.8, -5.86],
+      "translation": [0, 3, 0],
+      "scale": [0.55, 0.55, 0.55]
+    },
+    "firstperson_righthand": {
+      "rotation": [0.72, 13.8, -5.86],
+      "translation": [0, 3, 0],
+      "scale": [0.55, 0.55, 0.55]
+    },
+    "firstperson_lefthand": {
+      "rotation": [0.72, 13.8, -5.86],
+      "translation": [0, 3, 0],
+      "scale": [0.55, 0.55, 0.55]
+    },
+    "ground": {
+      "translation": [0, 3, 0],
+      "scale": [0.5, 0.5, 0.5]
+    },
+    "gui": {
+      "rotation": [21, 33, 0],
+      "translation": [0, 1.5, 0],
+      "scale": [0.9, 0.9, 0.9]
+    },
+    "head": {
+      "rotation": [0.72, 13.8, -5.86],
+      "translation": [0, 3, 0],
+      "scale": [0.55, 0.55, 0.55]
+    }
+  }
+}
